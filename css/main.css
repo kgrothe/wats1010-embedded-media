@@ -17,13 +17,11 @@ body {
 }
 
 header {
-  padding: 0;
-  margin: 0;
-  background: url('../img/official_header.jpg');
-  height: 350px;
-  width: auto;
+  min-height: 400px;
+  background-image: url('../img/official_header.jpg');
   background-repeat: no-repeat;
-  background-position: 30% 0%;
+  background-position: center center;
+  background-size: cover;
 }
 
 h1 {
@@ -35,16 +33,16 @@ h2 {
 }
 
 .subtitle {
-  display: block;
   position: relative;
   left: 48%;
-  top: 88%;
 }
 
 p.subtitle {
   font-size: larger;
   font-weight: bold;
 }
+
+/*******  top and bottom navigation bar *******/
 
 .main-nav li {
   display: block;
@@ -66,6 +64,8 @@ p.subtitle {
   font-weight: bold;
 }
 
+/**********   link styles  *******************/
+
 a:visited {
   color: purple;
 }
@@ -78,47 +78,73 @@ a:hover {
   color: black;
 }
 
-aside {
-  background-color: #79bf1b;
+/************** social media box ***************/
+
+#social {
+  background: pink;
   position: fixed;
-  top: 270px;
-  right: 250px;
-  width: 240px;
-  height: auto;
+  top: 50px;
+  right: 0;
+  width: 25px;
+}
+
+#social:hover {
+  width: 250px;
+  transition: 2s width;
 }
 
 aside img {
   width: 180px;
   height: auto;
-  padding: 10px;
-  position: relative;
-  left: 20px;
+  padding: 20px;
 }
 
-#about {
-  display: block;
-  width: 50%;
-  height: auto;
-  position: relative;
-  left: 20%;
-  padding: 10px 20px 10px 0px;
-}
+/****************** video *********************/
 
 #watch {
+  postition: relative;
+  left: 20%;
+}
+
+#watch h2 {
+  position: relative;
+  left: 20%;
+}
+
+#watch h3 {
+  position: relative;
+  left: 20%;
+}
+
+#watch p {
   position: relative;
   left: 20%;
 }
 
 video {
+  position: relative;
+  left: 20%;
   width: 35%;
   height: auto;
 }
 
+/**************** audio *********************/
+
 #listen {
-  width: 50%;
+  position: relative;
+  left: 20%;
+}
+
+
+/**********************  about story and creators ***********************/
+
+#about {
+  display: block;
+  width: 40%;
   height: auto;
   position: relative;
   left: 20%;
+  padding: 10px 20px 10px 0px;
 }
 
 .lead {
@@ -127,30 +153,29 @@ video {
   padding-right: 25px;
 }
 
-.weybec-people li {
-  display: block;
-  list-style: none;
-  padding-bottom: 30px;
-  padding-left: 50px;
-  float: left;
-}
-
-.weybec-people li img {
+.headshot {
   height: 160px;
   width: auto;
-  padding-top: 30px;
-  padding-right: 50px;
-  padding-bottom: 10px;
-  padding-left: 0px;
+  margin: 10px;
+  padding: 5px 20px 5px 10px;
+}
+
+.weybec-people li {
+  float: left;
+  list-style: none;
+  font-style: italic;
+  padding-bottom: 20px;
 }
 
 #about p {
   clear: left;
-  display: block;
 }
+
+/*************************** footer **********************/
 
 footer p {
   position: relative;
   left: 20%;
   font-size: small;
+  padding-bottom: 20px;
 }
