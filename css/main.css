@@ -32,27 +32,28 @@ h2 {
   color: purple;
 }
 
-.subtitle {
-  position: relative;
-  left: 48%;
-}
-
 p.subtitle {
+  position: relative;
+  left: 45%;
+  padding-top: 20px;
   font-size: larger;
   font-weight: bold;
 }
 
 /*******  top and bottom navigation bar *******/
 
+.main-nav {
+  display: inline-block;
+  position: relative;
+  left: 40%;
+}
+
 .main-nav li {
-  display: block;
+  list-style-type: none;
+  float: left;
   background-color: white;
   border: 2px solid blueviolet;
-  list-style: none;
-  padding: 15px 35px;
-  float: left;
-  position: relative;
-  left: 43%;
+  padding: 15px 35px;  
 }
 
 .main-nav li:not(:last-child) {
@@ -99,42 +100,33 @@ aside img {
   padding: 20px;
 }
 
+section {
+  display: block;
+  position: relative;
+  left: 20%;
+}
+
+
 /****************** video *********************/
 
-#watch {
-  postition: relative;
-  left: 20%;
-}
-
-#watch h2 {
-  position: relative;
-  left: 20%;
-}
-
-#watch h3 {
-  position: relative;
-  left: 20%;
-}
-
-#watch p {
-  position: relative;
-  left: 20%;
-}
-
 video {
-  position: relative;
-  left: 20%;
-  width: 35%;
+  width: 600px;
   height: auto;
 }
 
-/**************** audio *********************/
+/******** download buttons ********************/
 
-#listen {
-  position: relative;
-  left: 20%;
+.download-button 
+{
+  background-color: white;
+  border: 2px solid purple;
+  padding: 15px 32px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
 }
-
 
 /**********************  about story and creators ***********************/
 
@@ -142,9 +134,7 @@ video {
   display: block;
   width: 40%;
   height: auto;
-  position: relative;
-  left: 20%;
-  padding: 10px 20px 10px 0px;
+  padding: 10px;
 }
 
 .lead {
@@ -157,12 +147,13 @@ video {
   height: 160px;
   width: auto;
   margin: 10px;
-  padding: 5px 20px 5px 10px;
+  
 }
 
 .weybec-people li {
   float: left;
   list-style: none;
+  text-align: center;
   font-style: italic;
   padding-bottom: 20px;
 }
